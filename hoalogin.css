@@ -104,6 +104,10 @@
   height: 100%;
   object-fit: cover;
 }
+.form-signup-link {
+  color: #0c59f5;
+  text-decoration: underline;
+}
 .body {
   margin: 0;
 }
