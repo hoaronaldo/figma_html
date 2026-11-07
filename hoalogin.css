@@ -75,8 +75,8 @@
   display: flex;
   gap: 20px;
 }
-.form-icons{
- font-size: 12px;
+.form-icons {
+  font-size: 12px;
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -96,7 +96,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin:0 auto;
+  margin: 0 auto;
   max-width: 404px;
 }
 .auth-right img {
@@ -109,4 +109,36 @@
 }
 .body {
   margin: 0;
+}
+* {
+  box-sizing: border-box;
+}
+@media (max-width: 768px) {
+  .form-row {
+    flex-direction: row;
+  }
+
+  .form-icons-container {
+    flex-direction: column;
+  }
+  .auth-right {
+    display: none;
+  }
+  .auth-container {
+    gap: 0;
+    grid-template-columns: none;
+    height: auto;
+  }
+  .auth-left {
+    width: 100%;
+  }
+  .form-icons {
+    justify-content: center;
+  }
+  .auth-mobile img {
+    width: 100%;
+  }
+  .auth-mobile {
+    margin-bottom: 24px;
+  }
 }
